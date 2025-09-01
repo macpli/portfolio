@@ -1,0 +1,38 @@
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2 class="about-title dm-sans-bold">About Me</h2>
+        <p class="about-text dm-sans-regular">
+          I'm a passionate fullstack software engineer currently working with ERP systems, 
+          bringing a unique blend of academic foundation and practical industry experience. 
+          My journey spans from automation and robotics engineering to applied computer science, 
+          giving me a comprehensive understanding of both hardware and software systems.
+        </p>
+        <p class="about-text dm-sans-regular">
+          Currently specializing in enterprise resource planning solutions, I work with modern 
+          web technologies including Angular, .NET, and various database systems. My approach 
+          combines clean, maintainable code with user-centered design principles, always 
+          striving to create solutions that are both technically robust and intuitively usable.
+        </p>
+        <p class="about-text dm-sans-regular">
+          I'm driven by the challenge of solving complex business problems through technology 
+          and take pride in delivering scalable, efficient solutions that make a real impact 
+          in enterprise environments.
+        </p>
+        <div class="skills-container">
+          <mat-chip-set class="skills-chips">
+            <mat-chip *ngFor="let skill of skills" class="skill-chip dm-sans">{{ skill }}</mat-chip>
+          </mat-chip-set>
+        </div>
+      </div>
+      <div class="about-image-container">
+        <mat-card class="profile-card">
+          <div class="profile-image">
+            <img src="profile-pic.jpeg" alt="Profile" class="profile-img">
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

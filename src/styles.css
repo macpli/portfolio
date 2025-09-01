@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+  height: 100%; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+body { 
+  margin: 0; 
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.google-sans {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.google-sans-light {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+.google-sans-regular {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.google-sans-medium {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.google-sans-semibold {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+.google-sans-bold {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.google-sans-extrabold {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 800;
+}
+
+/* Legacy DM Sans classes for backward compatibility */
+.dm-sans {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.dm-sans-light {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+.dm-sans-regular {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.dm-sans-medium {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+.dm-sans-semibold {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+.dm-sans-bold {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.dm-sans-extrabold {
+  font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 800;
+}

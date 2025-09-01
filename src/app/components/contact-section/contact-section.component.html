@@ -1,0 +1,19 @@
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <h3 class="contact-title dm-sans-semibold">Connect with me</h3>
+    <div class="contact-links">
+      <a href="mailto:{{ email }}" class="contact-link dm-sans-medium">
+        <mat-icon>email</mat-icon>
+        {{ email }}
+      </a>
+      <a (click)="openLink(linkedinUrl)" class="contact-link dm-sans-medium">
+        <mat-icon>work</mat-icon>
+        LinkedIn
+      </a>
+      <a (click)="openLink(githubUrl)" class="contact-link dm-sans-medium">
+        <mat-icon>code</mat-icon>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>

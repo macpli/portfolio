@@ -1,0 +1,41 @@
+<section id="work" class="work-section">
+  <div class="work-container">
+    <div class="work-header">
+      <h2 class="work-title dm-sans-bold">Experience & Projects</h2>
+      <p class="work-description dm-sans-regular">
+        A showcase of my professional experience and personal projects in fullstack development.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <mat-card *ngFor="let project of projects" class="project-card">
+        <div class="project-image">
+          <!-- <img *ngIf="project.image" [src]="project.image" [alt]="project.title" class="project-img"> -->
+          <div *ngIf="project.placeholder" class="project-placeholder dm-sans-bold" 
+               [style.color]="project.placeholderColor">
+            {{ project.placeholder }}
+          </div>
+        </div>
+        <mat-card-content class="project-content">
+          <mat-card-title class="project-title dm-sans-semibold">{{ project.title }}</mat-card-title>
+          <mat-card-subtitle class="project-subtitle dm-sans-regular">{{ project.subtitle }}</mat-card-subtitle>
+          <p class="project-description dm-sans-regular">
+            {{ project.description }}
+          </p>
+          <div class="project-footer">
+            <div class="project-technologies">
+              <mat-chip-set>
+                <mat-chip *ngFor="let tech of project.technologies" class="tech-chip dm-sans">
+                  {{ tech }}
+                </mat-chip>
+              </mat-chip-set>
+            </div>
+            <button mat-icon-button class="project-link" (click)="openLink(project.link)">
+              <mat-icon>open_in_new</mat-icon>
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</section>
