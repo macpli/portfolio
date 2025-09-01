@@ -67,7 +67,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/",
+              "baseHref": "/portfolio/",
               "prerender": false,
               "ssr": false
             },
