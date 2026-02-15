@@ -1,5 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Theme CSS Variables */
+:root {
+  --background-color: #ffffff;
+  --surface-color: #f5f5f5;
+  --surface-variant: rgba(245, 247, 250, 0.3);
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --border-color: rgba(0, 0, 0, 0.12);
+  --hover-background: rgba(25, 118, 210, 0.04);
+  --toolbar-background: oklch(1 0 0);
+  --toolbar-blur: blur(10px);
+  --primary-color: #1976d2;
+  --primary-light: #42a5f5;
+  --primary-gradient: linear-gradient(135deg, #1976d2, #42a5f5);
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --chip-background: rgba(25, 118, 210, 0.1);
+  --chip-hover: rgba(25, 118, 210, 0.08);
+  --cms-background-gradient-1: #E7ECF3;
+  --cms-background-gradient-2: #FFFFFF;
+  --cms-linear-gradient: linear-gradient(180deg, #E7ECF3, #FFFFFF);
+  --mdc-chip-label-text-color: #1a1a1a;
+  --mat-sys-on-surface-variant: #1a1a1a;
+}
+
+.dark-theme {
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --surface-variant: rgba(30, 30, 30, 0.5);
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --hover-background: rgba(144, 202, 249, 0.08);
+  --toolbar-background: var(--background-color);
+  --toolbar-blur: blur(10px);
+  --primary-color: #90caf9;
+  --primary-light: #64b5f6;
+  --primary-gradient: linear-gradient(135deg, #90caf9, #64b5f6);
+  --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --card-shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.6);
+  --chip-background: rgba(144, 202, 249, 0.15);
+  --chip-hover: rgba(144, 202, 249, 0.12);
+  --cms-background-gradient-1: #1e1e1e;
+  --cms-background-gradient-2: #121212;
+  --cms-linear-gradient: linear-gradient(180deg, #1e1e1e, #121212);
+  --mdc-chip-label-text-color: #ffffff;
+  --mat-sys-on-surface-variant: #ffffff;
+}
+
 html, body { 
   height: 100%; 
   overflow-x: hidden; /* Prevent horizontal scroll */
@@ -9,6 +58,9 @@ body {
   margin: 0; 
   font-family: "Product Sans", Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.5;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img, video, iframe {

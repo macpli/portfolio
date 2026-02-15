@@ -1,6 +1,6 @@
 <mat-toolbar color="secondary" class="toolbar">
   <div class="toolbar-content">
-    <span class="dm-sans-bold">Portfolio</span>
+    <span class="dm-sans-bold main">Portfolio</span>
     
     <div class="nav-buttons">
       <button mat-button class="nav-button dm-sans" aria-label="About section" (click)="scrollToSection('about')">
@@ -11,6 +11,14 @@
       </button>
       <button mat-button class="nav-button dm-sans" aria-label="Contact section" (click)="scrollToSection('contact')">
         Contact
+      </button>
+      
+      <button 
+        mat-icon-button 
+        class="theme-toggle" 
+        (click)="toggleTheme()" 
+        [attr.aria-label]="themeService.isDarkMode() ? 'Switch to light mode' : 'Switch to dark mode'">
+        <mat-icon>{{ themeService.isDarkMode() ? 'light_mode' : 'dark_mode' }}</mat-icon>
       </button>
     </div>
 

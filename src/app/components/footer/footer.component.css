@@ -1,7 +1,6 @@
 .footer {
   padding: 2rem 1rem;
-  border-top: 1px solid #e0e0e0;
-  background: #ffffff;
+  border-top: 1px solid var(--border-color);
 }
 
 .footer-container {
@@ -12,7 +11,7 @@
 
 .footer-text {
   font-size: 0.875rem;
-  color: #666;
+  color: var(--text-secondary);
   margin: 0;
   line-height: 1.5;
 }

@@ -2,6 +2,10 @@
   flex: 1 1 auto;
 }
 
+.main {
+  color: var(--text-primary);
+}
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -10,13 +14,14 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: oklch(1 0 0);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: var(--toolbar-background);
+  backdrop-filter: var(--toolbar-blur);
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .toolbar-content {
@@ -37,7 +42,7 @@
 .nav-button {
   text-transform: none;
   font-weight: 500;
-  color: #666;
+  color: var(--text-primary);
   border-radius: 20px;
   padding: 6px 12px;
   transition: all 0.2s ease;
@@ -45,8 +50,19 @@
 }
 
 .nav-button:hover {
-  background-color: rgba(25, 118, 210, 0.04);
-  color: #1976d2;
+  background-color: var(--hover-background);
+  color: var(--primary-color);
+}
+
+.theme-toggle {
+  margin-left: 8px;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--primary-color);
+  background-color: var(--hover-background);
 }
 
 /* Mobile Responsive Design */
