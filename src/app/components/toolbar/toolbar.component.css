@@ -42,7 +42,7 @@
 .nav-button {
   text-transform: none;
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
   border-radius: 20px;
   padding: 6px 12px;
   transition: all 0.2s ease;
